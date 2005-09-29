@@ -1,0 +1,12 @@
+FIELDBUS framework
+(snapshot 2005-09-01)
+
+The main directory. Use make to build the simulation modells. 'makeneddoc.sh'
+is a workaround script for OPP 3.1 for making neddoc docs. You need a working
+installation of OPP 3.0 or OPP 3.2. Please enter the right path in the
+script.
+
+Use 'run.sh' in the subdirectories of Simulation to run the simulations
+automatically. If needed, please change the Makefile in the bin directories
+for switching between TK and shell environment.
+

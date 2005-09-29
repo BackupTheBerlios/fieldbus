@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/X11R6/bin:/usr/share/omnetpp-3.0/bin
+LD_LIBRARY_PATH=/usr/share/omnetpp-3.0/lib
+
+mv Documentation/neddoc/Makefile ./_Makefile
+opp_neddoc --no-source -o Documentation/neddoc -t Documentation/doxy/doxytags.xml -d ../doxy *.ned *.msg Common Network Application Simulation 
+mv _Makefile Documentation/neddoc/Makefile
